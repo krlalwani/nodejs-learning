@@ -4,12 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "startprod": "nodemon server.js",
+    "bureau": "nodemon bureau.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "xml2js": "^0.6.2"
   }
 }

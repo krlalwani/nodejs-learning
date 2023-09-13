@@ -10,6 +10,7 @@ exports.getAllTours = (req, res) => {
     },
   });
 };
+
 exports.getTourById = (req, res) => {
   console.log("inside getTour function ");
   //console.log(req.params);
