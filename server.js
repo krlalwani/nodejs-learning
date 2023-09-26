@@ -14,7 +14,6 @@ const DB = process.env.DB_URI.replace("<PASSWORD>", DBPasswd).replace(
 //mongoose.set("bufferCommands", false);
 
 async function run() {
-  console.log("Inside run");
   await mongoose
     .connect(DB, {
       useNewUrlParser: true,
@@ -34,7 +33,7 @@ const tourSchema = new mongoose.Schema({
   rating: { type: Number, default: 4.5 },
   price: { type: Number, required: true },
 });
-const Tour = mongoose.model("Tours", tourSchema);
+const Tour = mongoose.model("tours", tourSchema);
 
 const testTour = new Tour({
   name: "Kumar Lalwanis",
